@@ -1,4 +1,4 @@
-const CACHE_NAME = "wild-magic-v2";
+const CACHE_NAME = "wild-magic-v3";
 const APP_FILES = [
   "./",
   "./index.html",

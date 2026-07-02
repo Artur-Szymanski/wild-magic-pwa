@@ -1,0 +1,224 @@
+:root {
+  color-scheme: dark;
+  --bg: #0d0717;
+  --surface: #1a102b;
+  --surface-2: #24163c;
+  --text: #f5efff;
+  --muted: #cbbde4;
+  --accent: #bd86ff;
+  --accent-strong: #8f4de8;
+  --border: rgba(189, 134, 255, 0.35);
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--bg);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(143, 77, 232, 0.24), transparent 38rem),
+    var(--bg);
+  color: var(--text);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.app-shell {
+  width: min(100%, 42rem);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding:
+    max(1.25rem, env(safe-area-inset-top))
+    1rem
+    max(1.25rem, env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  text-align: center;
+  padding: 1rem 0 1.5rem;
+}
+
+.symbol {
+  font-size: 2.2rem;
+  color: var(--accent);
+  filter: drop-shadow(0 0 0.7rem rgba(189, 134, 255, 0.65));
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0.65rem;
+  font-size: clamp(1.8rem, 7vw, 2.65rem);
+  line-height: 1.05;
+}
+
+.app-header p,
+.status,
+footer {
+  color: var(--muted);
+}
+
+.app-header p {
+  max-width: 30rem;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  line-height: 1.55;
+}
+
+.controls {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.roll-button {
+  min-height: 4.15rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 1rem;
+  padding: 0.95rem 1.2rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #14071f;
+  font-weight: 800;
+  font-size: 1.15rem;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 120ms ease, filter 120ms ease;
+}
+
+.roll-button:active {
+  transform: scale(0.98);
+}
+
+.roll-button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.roll-button:disabled {
+  cursor: wait;
+  filter: grayscale(0.35);
+  opacity: 0.8;
+}
+
+.status {
+  min-height: 1.5rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.result-area {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.roll-summary,
+.extra-roll-summary {
+  display: grid;
+  justify-items: center;
+  gap: 0.25rem;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.main-roll {
+  font-size: clamp(4.25rem, 22vw, 7rem);
+  line-height: 0.95;
+  color: var(--accent);
+  text-shadow: 0 0 1.4rem rgba(189, 134, 255, 0.35);
+}
+
+.extra-roll-result {
+  font-size: 2.8rem;
+  color: var(--accent);
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.15rem;
+  background: linear-gradient(180deg, var(--surface-2), var(--surface));
+  box-shadow: var(--shadow);
+}
+
+.card h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+  color: var(--accent);
+}
+
+.card p {
+  margin-bottom: 0;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.extra-roll-section {
+  display: grid;
+  gap: 1rem;
+}
+
+.final-card {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+footer {
+  margin-top: auto;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 0.82rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+.error {
+  color: #ffb7c0;
+}
+
+@media (min-width: 42rem) {
+  .app-shell {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .card {
+    padding: 1.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}

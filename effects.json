@@ -1,0 +1,96 @@
+[
+  {
+    "min": 1,
+    "max": 10,
+    "description": "Wokół ciebie pojawiają się drobne, świetliste iskry. Efekt jest wyłącznie wizualny i trwa do początku twojej następnej tury.",
+    "extraRoll": null
+  },
+  {
+    "min": 11,
+    "max": 20,
+    "description": "Twoja magia przybiera losowy kolor. Wykonaj dodatkowy rzut k6, aby ustalić barwę poświaty.",
+    "extraRoll": {
+      "dice": 6,
+      "results": {
+        "1": "Poświata jest czerwona.",
+        "2": "Poświata jest pomarańczowa.",
+        "3": "Poświata jest żółta.",
+        "4": "Poświata jest zielona.",
+        "5": "Poświata jest niebieska.",
+        "6": "Poświata jest fioletowa."
+      }
+    }
+  },
+  {
+    "min": 21,
+    "max": 30,
+    "description": "Przez krótką chwilę słyszysz odległy dźwięk dzwonów, choć nikt poza tobą nie potrafi wskazać jego źródła.",
+    "extraRoll": null
+  },
+  {
+    "min": 31,
+    "max": 40,
+    "description": "W promieniu kilku metrów pojawia się łagodny podmuch wiatru, poruszający włosy, płaszcze i luźne kartki.",
+    "extraRoll": null
+  },
+  {
+    "min": 41,
+    "max": 50,
+    "description": "Na moment zmienia się brzmienie twojego głosu. Wykonaj dodatkowy rzut k4.",
+    "extraRoll": {
+      "dice": 4,
+      "results": {
+        "1": "Twój głos staje się bardzo niski.",
+        "2": "Twój głos staje się bardzo wysoki.",
+        "3": "Każde słowo brzmi jak szept.",
+        "4": "Każde słowo ma delikatne echo."
+      }
+    }
+  },
+  {
+    "min": 51,
+    "max": 60,
+    "description": "Nad twoją głową pojawia się niewielka, migocząca kula światła, która znika po zakończeniu twojej następnej tury.",
+    "extraRoll": null
+  },
+  {
+    "min": 61,
+    "max": 70,
+    "description": "Na twoim ubraniu pojawia się losowy, nieszkodliwy symbol. Wykonaj dodatkowy rzut k6.",
+    "extraRoll": {
+      "dice": 6,
+      "results": {
+        "1": "Pojawia się symbol słońca.",
+        "2": "Pojawia się symbol księżyca.",
+        "3": "Pojawia się symbol gwiazdy.",
+        "4": "Pojawia się symbol oka.",
+        "5": "Pojawia się symbol płomienia.",
+        "6": "Pojawia się symbol spirali."
+      }
+    }
+  },
+  {
+    "min": 71,
+    "max": 80,
+    "description": "Przez kilka sekund wokół ciebie unoszą się niewielkie, przezroczyste pióra, po czym rozpływają się w powietrzu.",
+    "extraRoll": null
+  },
+  {
+    "min": 81,
+    "max": 90,
+    "description": "W twojej dłoni pojawia się iluzoryczna moneta. Wykonaj dodatkowy rzut k2, aby ustalić jej stronę.",
+    "extraRoll": {
+      "dice": 2,
+      "results": {
+        "1": "Moneta pokazuje koronę.",
+        "2": "Moneta pokazuje smoka."
+      }
+    }
+  },
+  {
+    "min": 91,
+    "max": 100,
+    "description": "Przez chwilę otacza cię delikatna aura, która rozjaśnia obszar tuż obok ciebie i natychmiast gaśnie.",
+    "extraRoll": null
+  }
+]

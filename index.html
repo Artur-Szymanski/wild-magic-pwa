@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#160d2b">
+  <meta name="description" content="Prosta aplikacja PWA do losowania efektów dzikiej magii.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Wild Magic Surge 2024</title>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <div class="symbol" aria-hidden="true">✦</div>
+      <h1>Wild Magic Surge 2024</h1>
+      <p>Naciśnij przycisk, aby wylosować efekt dzikiej magii.</p>
+    </header>
+
+    <section class="controls" aria-label="Losowanie">
+      <button id="rollButton" class="roll-button" type="button">
+        <span aria-hidden="true">🎲</span>
+        Wylosuj efekt
+      </button>
+      <p id="statusMessage" class="status" aria-live="polite">Wynik pojawi się poniżej.</p>
+    </section>
+
+    <section id="resultArea" class="result-area" hidden aria-live="polite">
+      <div class="roll-summary">
+        <span class="label">Wynik k100</span>
+        <strong id="mainRoll" class="main-roll">—</strong>
+      </div>
+
+      <article class="card">
+        <h2>Efekt dzikiej magii</h2>
+        <p id="effectDescription"></p>
+      </article>
+
+      <section id="extraRollSection" class="extra-roll-section" hidden>
+        <div class="extra-roll-summary">
+          <span class="label" id="extraDiceLabel">Dodatkowy rzut</span>
+          <strong id="extraRollResult" class="extra-roll-result">—</strong>
+        </div>
+
+        <article class="card final-card">
+          <h2>Końcowy efekt</h2>
+          <p id="finalEffect"></p>
+        </article>
+      </section>
+    </section>
+
+    <footer>
+      <p>Wersja testowa — dane demonstracyjne.</p>
+    </footer>
+  </main>
+
+  <noscript>Ta aplikacja wymaga włączonego JavaScriptu.</noscript>
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,96 +1,196 @@
 [
   {
     "min": 1,
-    "max": 10,
-    "description": "Wokół ciebie pojawiają się drobne, świetliste iskry. Efekt jest wyłącznie wizualny i trwa do początku twojej następnej tury.",
+    "max": 4,
+    "description": "Przez następną minutę, na początku każdej swojej tury, wykonuj rzut w tej tabeli. Podczas kolejnych rzutów ignoruj wynik 01–04.",
     "extraRoll": null
   },
   {
-    "min": 11,
-    "max": 20,
-    "description": "Twoja magia przybiera losowy kolor. Wykonaj dodatkowy rzut k6, aby ustalić barwę poświaty.",
+    "min": 5,
+    "max": 8,
+    "description": "W losowym, niezajętym miejscu w promieniu 18 metrów od ciebie pojawia się istota Przyjazna (Friendly) wobec ciebie. Istota pozostaje pod kontrolą Mistrza Gry i znika po 1 minucie. Wykonaj rzut 1k4, aby określić istotę.",
     "extraRoll": {
-      "dice": 6,
+      "dice": 4,
       "results": {
-        "1": "Poświata jest czerwona.",
-        "2": "Poświata jest pomarańczowa.",
-        "3": "Poświata jest żółta.",
-        "4": "Poświata jest zielona.",
-        "5": "Poświata jest niebieska.",
-        "6": "Poświata jest fioletowa."
+        "1": "Pojawia się modron duodron (Modron Duodrone).",
+        "2": "Pojawia się flumph (Flumph).",
+        "3": "Pojawia się modron monodron (Modron Monodrone).",
+        "4": "Pojawia się jednorożec (Unicorn)."
+      }
+    }
+  },
+  {
+    "min": 9,
+    "max": 12,
+    "description": "Przez następną minutę odzyskujesz 5 punktów wytrzymałości na początku każdej swojej tury.",
+    "extraRoll": null
+  },
+  {
+    "min": 13,
+    "max": 16,
+    "description": "Istoty mają Utrudnienie (Disadvantage) w rzutach obronnych przeciwko następnemu czarowi, który rzucisz w ciągu najbliższej minuty, o ile czar ten wymaga rzutu obronnego.",
+    "extraRoll": null
+  },
+  {
+    "min": 17,
+    "max": 20,
+    "description": "Zostajesz objęty efektem, który trwa przez 1 minutę, chyba że jego opis stanowi inaczej. Wykonaj rzut 1k8, aby określić efekt.",
+    "extraRoll": {
+      "dice": 8,
+      "results": {
+        "1": "Otacza cię cicha, eteryczna muzyka, którą słyszysz tylko ty oraz istoty znajdujące się w promieniu 1,5 metra od ciebie.",
+        "2": "Twój rozmiar zwiększa się o jedną kategorię.",
+        "3": "Wyrasta ci długa broda z piór. Pozostaje ona do chwili, gdy kichniesz. Wtedy pióra eksplodują z twojej twarzy i znikają.",
+        "4": "Za każdym razem, gdy mówisz, musisz krzyczeć.",
+        "5": "W promieniu 3 metrów od ciebie unoszą się iluzoryczne motyle.",
+        "6": "Na twoim czole pojawia się dodatkowe oko, które zapewnia ci Ułatwienie (Advantage) w testach Percepcji.",
+        "7": "Za każdym razem, gdy mówisz, z twoich ust wydobywają się różowe bańki.",
+        "8": "Twoja skóra przybiera intensywnie niebieski kolor na 24 godziny albo do chwili zakończenia efektu czarem Zdjęcie klątwy (Remove Curse)."
       }
     }
   },
   {
     "min": 21,
-    "max": 30,
-    "description": "Przez krótką chwilę słyszysz odległy dźwięk dzwonów, choć nikt poza tobą nie potrafi wskazać jego źródła.",
+    "max": 24,
+    "description": "Przez następną minutę wszystkie twoje czary, których czas rzucania wynosi 1 akcję, mają czas rzucania równy 1 akcji dodatkowej.",
     "extraRoll": null
   },
   {
-    "min": 31,
+    "min": 25,
+    "max": 28,
+    "description": "Zostajesz przeniesiony na Plan Astralny (Astral Plane) do końca swojej następnej tury. Następnie wracasz do miejsca, które wcześniej zajmowałeś. Jeżeli jest ono zajęte, pojawiasz się w najbliższym niezajętym miejscu.",
+    "extraRoll": null
+  },
+  {
+    "min": 29,
+    "max": 32,
+    "description": "Następnym razem, gdy w ciągu najbliższej minuty rzucisz czar zadający obrażenia, nie wykonuj rzutów kośćmi obrażeń. Zamiast tego dla każdej kości obrażeń zastosuj jej najwyższy możliwy wynik.",
+    "extraRoll": null
+  },
+  {
+    "min": 33,
+    "max": 36,
+    "description": "Przez następną minutę zyskujesz Odporność (Resistance) na wszystkie rodzaje obrażeń.",
+    "extraRoll": null
+  },
+  {
+    "min": 37,
     "max": 40,
-    "description": "W promieniu kilku metrów pojawia się łagodny podmuch wiatru, poruszający włosy, płaszcze i luźne kartki.",
+    "description": "Do początku swojej następnej tury przemieniasz się w roślinę doniczkową. W tej postaci masz stan Obezwładniony (Incapacitated) oraz Podatność (Vulnerability) na wszystkie rodzaje obrażeń. Jeżeli twoje punkty wytrzymałości spadną do 0, doniczka rozbija się, a ty powracasz do swojej normalnej postaci.",
     "extraRoll": null
   },
   {
     "min": 41,
-    "max": 50,
-    "description": "Na moment zmienia się brzmienie twojego głosu. Wykonaj dodatkowy rzut k4.",
-    "extraRoll": {
-      "dice": 4,
-      "results": {
-        "1": "Twój głos staje się bardzo niski.",
-        "2": "Twój głos staje się bardzo wysoki.",
-        "3": "Każde słowo brzmi jak szept.",
-        "4": "Każde słowo ma delikatne echo."
-      }
-    }
-  },
-  {
-    "min": 51,
-    "max": 60,
-    "description": "Nad twoją głową pojawia się niewielka, migocząca kula światła, która znika po zakończeniu twojej następnej tury.",
+    "max": 44,
+    "description": "Przez następną minutę możesz w każdej swojej turze użyć akcji dodatkowej, aby teleportować się na odległość do 6 metrów.",
     "extraRoll": null
   },
   {
-    "min": 61,
-    "max": 70,
-    "description": "Na twoim ubraniu pojawia się losowy, nieszkodliwy symbol. Wykonaj dodatkowy rzut k6.",
+    "min": 45,
+    "max": 48,
+    "description": "Ty oraz maksymalnie trzy wybrane przez ciebie istoty znajdujące się w promieniu 9 metrów otrzymujecie stan Niewidzialny (Invisible) na 1 minutę. Niewidzialność danej istoty kończy się natychmiast po tym, jak wykona ona rzut ataku, zada obrażenia albo rzuci czar.",
+    "extraRoll": null
+  },
+  {
+    "min": 49,
+    "max": 52,
+    "description": "Przez następną minutę w pobliżu ciebie unosi się widmowa tarcza. Zapewnia ci premię +2 do Klasy Pancerza oraz niewrażliwość na czar Magiczny pocisk (Magic Missile).",
+    "extraRoll": null
+  },
+  {
+    "min": 53,
+    "max": 56,
+    "description": "W tej turze możesz wykonać jedną dodatkową akcję.",
+    "extraRoll": null
+  },
+  {
+    "min": 57,
+    "max": 60,
+    "description": "Rzucasz losowy czar. Jeżeli czar normalnie wymaga Koncentracji (Concentration), w tym przypadku jej nie wymaga i trwa przez pełny czas swojego działania. Wykonaj rzut 1k10, aby określić czar.",
     "extraRoll": {
-      "dice": 6,
+      "dice": 10,
       "results": {
-        "1": "Pojawia się symbol słońca.",
-        "2": "Pojawia się symbol księżyca.",
-        "3": "Pojawia się symbol gwiazdy.",
-        "4": "Pojawia się symbol oka.",
-        "5": "Pojawia się symbol płomienia.",
-        "6": "Pojawia się symbol spirali."
+        "1": "Rzucasz Zamęt (Confusion).",
+        "2": "Rzucasz Kulę ognia (Fireball).",
+        "3": "Rzucasz Chmurę mgły (Fog Cloud).",
+        "4": "Rzucasz Lot (Fly) na losową istotę znajdującą się w promieniu 18 metrów od ciebie.",
+        "5": "Rzucasz Tłuszcz (Grease).",
+        "6": "Rzucasz Lewitację (Levitate) na siebie.",
+        "7": "Rzucasz Magiczny pocisk (Magic Missile) jako czar 5. poziomu.",
+        "8": "Rzucasz Lustrzane odbicie (Mirror Image).",
+        "9": "Rzucasz Polimorfię (Polymorph) na siebie. Jeżeli nie zdasz rzutu obronnego, przemieniasz się w kozę (Goat).",
+        "10": "Rzucasz Widzenie niewidzialności (See Invisibility)."
       }
     }
   },
   {
-    "min": 71,
+    "min": 61,
+    "max": 64,
+    "description": "Przez następną minutę każdy łatwopalny, niemagiczny przedmiot, którego dotkniesz, wybucha płomieniem, o ile nie jest noszony ani trzymany przez inną istotę. Przedmiot otrzymuje 1k4 obrażeń od ognia i zaczyna płonąć.",
+    "extraRoll": null
+  },
+  {
+    "min": 65,
+    "max": 68,
+    "description": "Jeżeli umrzesz w ciągu najbliższej godziny, natychmiast powracasz do życia, tak jakby rzucono na ciebie czar Reinkarnacja (Reincarnate).",
+    "extraRoll": null
+  },
+  {
+    "min": 69,
+    "max": 72,
+    "description": "Do końca swojej następnej tury masz stan Przerażony (Frightened). Mistrz Gry określa źródło twojego strachu.",
+    "extraRoll": null
+  },
+  {
+    "min": 73,
+    "max": 76,
+    "description": "Teleportujesz się na odległość do 18 metrów do wybranego, niezajętego miejsca, które widzisz.",
+    "extraRoll": null
+  },
+  {
+    "min": 77,
     "max": 80,
-    "description": "Przez kilka sekund wokół ciebie unoszą się niewielkie, przezroczyste pióra, po czym rozpływają się w powietrzu.",
+    "description": "Losowa istota znajdująca się w promieniu 18 metrów od ciebie otrzymuje stan Zatruty (Poisoned) na 1k4 godziny.",
     "extraRoll": null
   },
   {
     "min": 81,
-    "max": 90,
-    "description": "W twojej dłoni pojawia się iluzoryczna moneta. Wykonaj dodatkowy rzut k2, aby ustalić jej stronę.",
-    "extraRoll": {
-      "dice": 2,
-      "results": {
-        "1": "Moneta pokazuje koronę.",
-        "2": "Moneta pokazuje smoka."
-      }
-    }
+    "max": 84,
+    "description": "Przez następną minutę emitujesz jasne światło w promieniu 9 metrów. Każda istota, która kończy swoją turę w promieniu 1,5 metra od ciebie, otrzymuje stan Oślepiony (Blinded) do końca swojej następnej tury.",
+    "extraRoll": null
   },
   {
-    "min": 91,
-    "max": 100,
-    "description": "Przez chwilę otacza cię delikatna aura, która rozjaśnia obszar tuż obok ciebie i natychmiast gaśnie.",
+    "min": 85,
+    "max": 88,
+    "description": "Maksymalnie trzy wybrane przez ciebie istoty, które widzisz w promieniu 9 metrów, otrzymują po 1k10 obrażeń nekrotycznych. Odzyskujesz liczbę punktów wytrzymałości równą sumie wszystkich zadanych w ten sposób obrażeń nekrotycznych.",
     "extraRoll": null
+  },
+  {
+    "min": 89,
+    "max": 92,
+    "description": "Maksymalnie trzy wybrane przez ciebie istoty znajdujące się w promieniu 9 metrów otrzymują po 4k10 obrażeń od błyskawic.",
+    "extraRoll": null
+  },
+  {
+    "min": 93,
+    "max": 96,
+    "description": "Przez następną minutę ty oraz wszystkie istoty znajdujące się w promieniu 9 metrów macie Podatność (Vulnerability) na obrażenia kłute.",
+    "extraRoll": null
+  },
+  {
+    "min": 97,
+    "max": 100,
+    "description": "Wykonaj rzut 1k6, aby określić efekt.",
+    "extraRoll": {
+      "dice": 6,
+      "results": {
+        "1": "Odzyskujesz 2k10 punktów wytrzymałości.",
+        "2": "Jeden wybrany przez ciebie sojusznik znajdujący się w promieniu 90 metrów odzyskuje 2k10 punktów wytrzymałości.",
+        "3": "Odzyskujesz jedną zużytą komórkę czaru najniższego dostępnego poziomu.",
+        "4": "Jeden wybrany przez ciebie sojusznik znajdujący się w promieniu 90 metrów odzyskuje jedną zużytą komórkę czaru najniższego dostępnego poziomu.",
+        "5": "Odzyskujesz wszystkie zużyte Sorcery Points.",
+        "6": "Wszystkie efekty z zakresu 17–20 działają na ciebie jednocześnie: otacza cię eteryczna muzyka słyszalna w promieniu 1,5 metra; twój rozmiar zwiększa się o jedną kategorię; wyrasta ci broda z piór; musisz krzyczeć, gdy mówisz; w promieniu 3 metrów unoszą się iluzoryczne motyle; dodatkowe oko zapewnia ci Ułatwienie (Advantage) w testach Percepcji; z twoich ust wydobywają się różowe bańki; twoja skóra staje się intensywnie niebieska na 24 godziny albo do zakończenia efektu czarem Zdjęcie klątwy (Remove Curse). Efekty trwają 1 minutę, chyba że ich opis stanowi inaczej."
+      }
+    }
   }
 ]
